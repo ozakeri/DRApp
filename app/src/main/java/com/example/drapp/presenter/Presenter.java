@@ -49,8 +49,4 @@ public class Presenter {
             }
         });
     }
-
-    public void getPhotoById() {
-
-    }
 }

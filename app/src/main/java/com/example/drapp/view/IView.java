@@ -6,5 +6,4 @@ import java.util.List;
 
 public interface IView{
     void getPhotos(List<Photo> photos);
-    void getPhotoById(int id);
 }
