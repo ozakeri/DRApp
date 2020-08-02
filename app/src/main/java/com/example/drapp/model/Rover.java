@@ -19,4 +19,44 @@ public class Rover {
     @SerializedName("status")
     @Expose
     public String status;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLandingDate() {
+        return landingDate;
+    }
+
+    public void setLandingDate(String landingDate) {
+        this.landingDate = landingDate;
+    }
+
+    public String getLaunchDate() {
+        return launchDate;
+    }
+
+    public void setLaunchDate(String launchDate) {
+        this.launchDate = launchDate;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

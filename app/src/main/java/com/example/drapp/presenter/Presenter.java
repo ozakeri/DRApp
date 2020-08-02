@@ -30,16 +30,27 @@ public class Presenter {
             public void onResponse(Call<Result> call, Response<Result> response) {
 
                 Result result = response.body();
-                if (result != null){
-                    
+                System.out.println("result=====" + result);
+                if (result != null) {
+                    List<Photo> resultList = result.getPhotos();
+                    System.out.println("result=====" + result.getPhotos());
+                    iView.getPhotos(resultList);
                 }
 
             }
 
             @Override
             public void onFailure(Call<Result> call, Throwable t) {
-
+                try {
+                    throw new InterruptedException("Something went wrong!");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         });
+    }
+
+    public void getPhotoById() {
+
     }
 }

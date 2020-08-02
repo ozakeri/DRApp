@@ -4,6 +4,7 @@ import com.example.drapp.model.Photo;
 
 import java.util.List;
 
-public interface IView {
+public interface IView{
     void getPhotos(List<Photo> photos);
+    void getPhotoById(int id);
 }
